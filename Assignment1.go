@@ -14,7 +14,11 @@ func main() {
 		fmt.Printf("Roda %d: Mobil", roda)
 		break
 	default:
-		fmt.Printf("Roda %d: Truk atau Bis", roda)
+		if roda > 4 && roda%2 == 0 {
+			fmt.Printf("Roda %d: Truk atau Bis", roda)
+		} else {
+			fmt.Printf("Jumlah roda tidak sesuai dengan ketentuan kendaraan pada umumnya!")
+		}
 		break
 	}
 }
